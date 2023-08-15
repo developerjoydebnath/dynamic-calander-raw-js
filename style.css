@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.upper-container {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.container {
+    background-color: rgb(243, 148, 255);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.days {
+    /* display: grid; */
+    /* grid-template-columns: repeat(7, 1fr); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.week-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+
+
+.current-day {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.inactive-days {
+    color: #888888;
+}
+
+.month-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    /* border: 1px solid black; */
+    padding: 15px;
+    font-size: 18px;
+}
