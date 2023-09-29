@@ -40,7 +40,7 @@ const renderCalender = () => {
     }
 
     for ( let i = 1; i <= lastDateOfMonth; i++ ) {
-        liTag +=  `${i === currentDate && currentMonth === date.getMonth() ? `<li class="current-day month-day"> ${i} </li>` : `<li class="month-day"> ${i} </li>`}`;
+        liTag +=  `${i === currentDate && currentMonth === date.getMonth() && currentYear === date.getFullYear() ? `<li class="current-day month-day"> ${i} </li>` : `<li class="month-day"> ${i} </li>`}`;
         dateElement.innerHTML = liTag;
     }
 
